@@ -1,6 +1,6 @@
 {
     "python.linting.enabled": true,
-    "python.pythonPath": "venv/bin/python",
+    "python.pythonPath": "E:\\ProgramData\\Anaconda3\\python.exe",
     "python.linting.pylintEnabled": true,
     "git.ignoreLimitWarning": true
 }
