@@ -10,7 +10,6 @@ from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-from pprint import pprint
 
 # Import dataset
 dataset = pd.read_csv('class02.csv')
