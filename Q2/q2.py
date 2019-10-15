@@ -3,7 +3,6 @@
 # Validação cruzada KFold (sem estratificação) com K = 5
 # """
 
-from sklearn.model_selection import cross_val_score, cross_validate
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import KFold
 from sklearn.neighbors import KNeighborsClassifier
