@@ -3,14 +3,14 @@
 # Validação cruzada KFold (sem estratificação) com K = 5
 # """
 
-from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import KFold
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Import dataset
+# import dataset
 dataset = pd.read_csv('class02.csv')
 X = dataset.iloc[:, 0:100].values
 y = dataset.iloc[:, -1].values
@@ -27,6 +27,11 @@ for train_index, test_index in k_fold.split(X):
     # get indexes
     X_train, X_test = X[train_index], X[test_index]
     y_train, y_test = y[train_index], y[test_index]
+
+    # feature scaling
+    sc = StandardScaler()
+    X_train = sc.fit_transform(X_train)
+    X_test = sc.transform(X_test)
 
     # train
     knn_classifier.fit(X_train, y_train)
