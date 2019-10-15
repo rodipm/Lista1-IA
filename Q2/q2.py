@@ -39,7 +39,6 @@ for train_index, test_index in k_fold.split(X):
     # predict
     scores.append(knn_classifier.score(X_test, y_test))
 
-
 print("==== KNN =====")
 print("Valores médios por repetição: ")
 print(*["\t" + str(x+1) + ".: " + str(scores[x]) + "\n" for x in range(5)])

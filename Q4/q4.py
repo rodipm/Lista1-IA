@@ -43,7 +43,7 @@ for train_index, test_index in k_fold.split(X):
 mae_train_mean = np.mean(mae_train_history)
 mae_test_mean = np.mean(mae_test_history)
 
-print("===== LASSO REGRESSION =====")
+print("===== Árvore de Regressão =====")
 print("Valores MAE para base de treino:")
 print(*["\t" + str(x+1) + ".: " + str(mae_train_history[x]) + "\n" for x in range(5)])
 print("Valores MAE para base de testes:")
