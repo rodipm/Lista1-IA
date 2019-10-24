@@ -1,7 +1,7 @@
 ==== HOLDOUT =====
 Accuracy:
-Train Set:  0.7246153846153847 %
-Test Set:  0.62 %
+Train Set:  0.7714285714285715 %
+Test Set:  0.6 %
 ==== LEAVE ONE OUT =====
 Mean Accuracy Accuracy:
 Train Set:  0.6892802802802754 %

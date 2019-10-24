@@ -19,7 +19,7 @@ y = dataset.iloc[:, -1].values
 ####################################################
 ####################################################
 """
-Holdout: 35 - 75 
+Holdout: Train: 35 - Test: 65 
 """
 ####################################################
 ####################################################
@@ -28,7 +28,7 @@ Holdout: 35 - 75
 # Split dataset into train and test sets
 # 35% para treino e 75% para teste
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.35)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.65)
 
 # Feature Scaling
 from sklearn.preprocessing import StandardScaler

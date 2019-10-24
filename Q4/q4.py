@@ -33,8 +33,8 @@ for train_index, test_index in k_fold.split(X):
     y_pred = regressor.predict(X_test)
 
     # Prediction Visualization
-    mae_train = sqrt(mean_absolute_error(y_train, y_train_pred))
-    mae_test = sqrt(mean_absolute_error(y_test, y_pred))
+    mae_train = mean_absolute_error(y_train, y_train_pred)
+    mae_test = mean_absolute_error(y_test, y_pred)
 
     mae_train_history.append(mae_train)
     mae_test_history.append(mae_test)
